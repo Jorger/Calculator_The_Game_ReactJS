@@ -1,0 +1,15 @@
+/* Para el teclado */
+.lcd_keyboard {
+  --width_lcd_keyboard: var(--width_frame);
+  --height_lcd_keyboard: calc(var(--height_frame) * 0.58);
+  /* Para el ancho y alto del espacio donde estarán los botones... */
+  --width_space_button: calc(var(--width_lcd_keyboard) * 0.27);
+  --height_space_button: calc(var(--height_lcd_keyboard) * 0.2);
+}
+
+.lcd_keyboard {
+  position: relative;
+  width: var(--width_lcd_keyboard);
+  height: var(--height_lcd_keyboard);
+  box-sizing: border-box;
+}

@@ -1,0 +1,102 @@
+.space_button {
+  position: absolute;
+  width: var(--width_space_button);
+  height: var(--height_space_button);
+  border-radius: 8px;
+  box-shadow: 0px -2px 0px 2px #cbc4b8;
+  background: #b5afa3;
+  box-sizing: border-box;
+}
+
+.button {
+  position: absolute;
+  top: -10px;
+  width: var(--width_space_button);
+  height: var(--height_space_button);
+  font-size: 1.3em;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #6d6d6d;
+  background: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 9px #d0d0d0;
+}
+
+.button:active {
+  box-shadow: 0 5px #d0d0d0;
+  transform: translateY(4px);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.button:disabled {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Estilo para los demás botones... */
+
+.button__darkblue {
+  background: #434b49;
+  box-shadow: 0 9px rgb(50, 56, 55);
+  color: #e4dcd0;
+}
+.button__darkblue:active {
+  box-shadow: 0 5px rgb(50, 56, 55);
+}
+.button__lightgreen {
+  background: #21a197;
+  box-shadow: 0 9px rgb(25, 121, 113);
+  color: #e4dcd0;
+}
+.button__lightgreen:active {
+  box-shadow: 0 5px rgb(25, 121, 113);
+}
+.button__darkred {
+  background: #c3302a;
+  box-shadow: 0 9px rgb(146, 36, 32);
+  color: #e4dcd0;
+}
+.button__darkred:active {
+  box-shadow: 0 5px rgb(146, 36, 32);
+}
+.button__gold {
+  background: #e2bc1d;
+  box-shadow: 0 9px rgb(170, 141, 22);
+  color: #e4dcd0;
+}
+.button__gold:active {
+  box-shadow: 0 5px rgb(170, 141, 22);
+}
+.button__darkgreen {
+  background: #45ae2d;
+  box-shadow: 0 9px rgb(52, 131, 34);
+  color: #e4dcd0;
+}
+.button__darkgreen:active {
+  box-shadow: 0 5px rgb(52, 131, 34);
+}
+.button__lightorange {
+  background: #e96e12;
+  box-shadow: 0 9px rgb(175, 83, 14);
+  color: #e4dcd0;
+}
+.button__lightorange:active {
+  box-shadow: 0 5px rgb(175, 83, 14);
+}
+.button__lightpurple {
+  background: #877bd5;
+  box-shadow: 0 9px rgb(101, 92, 160);
+  color: #e4dcd0;
+}
+.button__lightpurple:active {
+  box-shadow: 0 5px rgb(101, 92, 160);
+}
+.button__lightblue {
+  background: #6b93b5;
+  box-shadow: 0 9px rgb(80, 110, 136);
+  color: #e4dcd0;
+}
+.button__lightblue:active {
+  box-shadow: 0 5px rgb(80, 110, 136);
+}

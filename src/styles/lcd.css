@@ -1,0 +1,143 @@
+.lcd_frame {
+  --width_lcd_frame: var(--width_frame);
+  --height_lcd_frame: calc(var(--height_frame) * 0.42);
+  /* Para las dimensiones de la carcasa del LCD... */
+  --width_lcd_housing: calc(var(--width_lcd_frame) * 0.85);
+  --height_lcd_housing: calc(var(--height_lcd_frame) * 0.85);
+  /* Para la dimensión del label del texto */
+  --height_lcd_level_txt: calc(var(--height_lcd_housing) * 0.18);
+  /* Para la dimensión del LCD contenido */
+  --height_lcd_content: calc(var(--height_lcd_housing) * 0.72);
+  --width_lcd_content: calc(var(--width_lcd_housing) * 0.88);
+  /* Para las dimensiones de las opciones...*/
+  --height_lcd_option: calc(var(--height_lcd_content) * 0.21);
+  /* Para el ancho del rostro...*/
+  --width_lcd_face: calc(var(--width_lcd_content) * 0.23);
+  /* Para el ancho de las opciones...*/
+  --width_lcd_option: calc(var(--width_lcd_content) * 0.25);
+  /* Para el alto del texto del LCD */
+  --height_lcd_text: calc(var(--height_lcd_content) * 0.4);
+}
+
+.lcd_frame {
+  width: var(--width_lcd_frame);
+  height: var(--height_lcd_frame);
+  /* border: 2px solid blue; */
+  box-sizing: border-box;
+}
+
+.lcd_housing {
+  position: absolute;
+  left: 7.5%;
+  top: 3.2%;
+  width: var(--width_lcd_housing);
+  height: var(--height_lcd_housing);
+  /* border: 2px solid orange; */
+  box-sizing: border-box;
+  border-radius: 5%;
+  background: #373c40;
+}
+
+.lcd_level_txt {
+  position: absolute;
+  left: 6%;
+  width: var(--width_lcd_content);
+  height: var(--height_lcd_level_txt);
+  /* border: 2px solid blue; */
+  box-sizing: border-box;
+  color: #dedede;
+  font-size: 1.2em;
+  padding-top: 8px;
+  padding-left: 10px;
+  font-style: italic;
+}
+
+.lcd_content {
+  position: absolute;
+  left: 6%;
+  top: 18%;
+  width: var(--width_lcd_content);
+  height: var(--height_lcd_content);
+  /* border: 2px solid green; */
+  box-shadow: inset 0px 6px 0px #899885;
+  border-radius: 5%;
+  box-sizing: border-box;
+  background: #a5b8a2;
+}
+
+.lcd_face {
+  position: absolute;
+  left: 5%;
+  top: 8%;
+  width: var(--width_lcd_face);
+  height: var(--height_lcd_option);
+  border: 5px solid #3e3e3e;
+  border-radius: 10px;
+  box-sizing: content-box;
+}
+
+.lcd_face__happy {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 10%;
+  top: 18%;
+  background: #a4b8a2;
+  border-radius: 50%;
+  box-shadow: inset 2px -1px 0px 3px #3e3e3e, 34px -1px 0px -3px #a5b8a2,
+    32px 0 0 #3e3e3e, 16px 3px 0 5px #a4b8a2, 16px 7px 0 5px #3e3e3e;
+}
+
+.lcd_face__sad {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 10%;
+  top: 35%;
+  background: #a4b8a2;
+  border-radius: 50%;
+  box-shadow: inset 2px -1px 0px 3px #3e3e3e, 34px -1px 0px -3px #a5b8a2,
+    32px 0 0 #3e3e3e, 16px 5px 0 4px #a4b8a2, 16px 2px 0 4px #3e3e3e;
+}
+
+.lcd_option {
+  position: absolute;
+  top: 8%;
+  width: var(--width_lcd_option);
+  height: var(--height_lcd_option);
+  border: 5px solid #3e3e3e;
+  background: #3e3e3e;
+  color: #a5b8a2;
+  border-radius: 5px;
+  box-sizing: content-box;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.lcd_moves {
+  left: 35%;
+}
+
+.lcd_goal {
+  left: 68%;
+}
+
+.lcd_pause {
+  border: 5px solid #9dae9a;
+  background: #9cae99;
+}
+
+.lcd_text {
+  position: absolute;
+  top: 54%;
+  width: var(--width_lcd_content);
+  height: var(--height_lcd_text);
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: right;
+  font-size: 2.5em;
+  letter-spacing: 4px;
+  font-family: "Orbitron", sans-serif;
+  text-shadow: 3px 2px 0px #7c8a79;
+  transform: scale(1, 1.4);
+}

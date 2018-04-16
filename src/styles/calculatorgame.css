@@ -1,0 +1,16 @@
+.flex-container {
+  display: flex;
+  height: 100%;
+}
+
+.container {
+  margin: auto;
+  position: relative;
+}
+
+.frame_game {
+  width: var(--width_frame);
+  height: var(--height_frame);
+  box-sizing: border-box;
+  background: #e4dcd0;
+}
